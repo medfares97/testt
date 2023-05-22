@@ -11,7 +11,6 @@ class ProjectEmployee(models.Model):
     _name = 'project.employee'
     _description = 'Project Employee'
 
-    employee_id = fields.Many2one('hr.employee', string='Employee')
     project_id = fields.Many2one('project.project', string='Project')
     weighting = fields.Float(string='Weighting', digits=(1, 10))
     active = fields.Boolean(string="Active", default=True)
