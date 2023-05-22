@@ -3,7 +3,6 @@ from odoo.exceptions import ValidationError
 
 
 # La classe `ProjectEmployee` représente l'association entre un employé et un projet,
-# avec le champ `employee_id` de type `Many2one` pour sélectionner un employé,
 # le champ `project_id` de type `Many2one` pour choisir un projet,
 # et le champ `weighting` de type `Integer` pour spécifier la pondération
 
