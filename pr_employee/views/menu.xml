@@ -8,7 +8,6 @@
             <tree>
                 <field name="project_id"/>
                 <field name="weighting"/>
-                <field name="employee_ids"/>
             </tree>
         </field>
     </record>
@@ -20,7 +19,6 @@
             <form>
                 <field name="project_id"/>
                 <field name="weighting"/>
-                <field name="employee_ids"/>
 
             </form>
         </field>
