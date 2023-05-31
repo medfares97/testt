@@ -6,7 +6,6 @@
         <field name="model">project.employee</field>
         <field name="arch" type="xml">
             <tree>
-                <field name="employee_id"/>
                 <field name="project_id"/>
                 <field name="weighting"/>
             </tree>
@@ -18,10 +17,8 @@
         <field name="model">project.employee</field>
         <field name="arch" type="xml">
             <form>
-                <field name="employee_id"/>
                 <field name="project_id"/>
                 <field name="weighting"/>
-                <field name="employee_ids"/>
 
             </form>
         </field>
