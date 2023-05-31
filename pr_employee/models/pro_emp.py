@@ -3,7 +3,6 @@ from odoo.exceptions import ValidationError
 
 
 # La classe `ProjectEmployee` représente l'association entre un employé et un projet,
-# avec le champ `employee_id` de type `Many2one` pour sélectionner un employé,
 # le champ `project_id` de type `Many2one` pour choisir un projet,
 # et le champ `weighting` de type `Integer` pour spécifier la pondération
 
@@ -15,6 +14,11 @@ class ProjectEmployee(models.Model):
     weighting = fields.Float(string='Weighting', digits=(1, 10), default=1)
     active = fields.Boolean(string="Active", default=True)
     employee_ids = fields.Many2many('hr.employee', string='Employees')
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> origin/main
 
     @api.constrains('weighting')
     def _check_weighting(self):
@@ -22,6 +26,10 @@ class ProjectEmployee(models.Model):
             if record.weighting < 1 or record.weighting > 10:
                 raise ValidationError("Weighting must be between 1 and 10.")
 
+<<<<<<< HEAD
 #  La classe `ProjectEmployeeTest`
 #  hérite de la classe `project.project` existante dans Odoo.
 #  ajoute un champ `employee_ids` de type `Many2many` pour stocker les employés associés à un projet
+=======
+
+>>>>>>> origin/main
